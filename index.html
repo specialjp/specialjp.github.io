@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+    <style>
+    button {
+        background-color: aqua;
+    }
+    .text {
+        color:chocolate;
+        font-size: 20px;
+    }
+    .text1 {
+        color: blue;
+    }
+    .my-img {
+       width: 200px;
+       height: 500px; 
+       background-image: url('./img/E-T.jpg')
+    }
+    </style>
+    <!-- JavaScript -->
+    <script>
+        function onAleart () {
+            alert('Hello World....!!');
+        }
+
+        function onAleartMyText (text) {
+            var mergeText = text + document.getElementById('myText').value;
+            alert(mergeText);
+        }
+    </script>
+</head>
+<body>
+    Hello World<br>
+    <!-- Img Tag -->
+    <img style="width: 300px; height: 300px;" src="./img/E-T.jpg"></img>
+    <!-- <h1 class="my-img">555555</h1> -->
+    <input></input>
+    <button><h1 class="text1   text">H1</h1></button>
+    <h2 style="color:#E0FF33">Hi everyone</h2>
+    <button onclick="onAleart()" style="background-color: brown;"><h1>Hi</h1></button>
+    <hr/><br/>
+    Enter Your Name: <input type="text" id="myText"></input>
+    <button onclick="onAleartMyText('Hello. ')">OK</button>
+</body>
+</html>
